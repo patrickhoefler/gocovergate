@@ -16,6 +16,7 @@ go install github.com/patrickhoefler/gocovergate@latest
 ## Usage
 
 ```shell
+go test ./... --coverprofile cover.out
 gocovergate
 ```
 
