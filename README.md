@@ -9,13 +9,13 @@ If it is below 80%, it will exit with a status code of 1.
 
 ## Installation
 
-```shell
+```text
 go install github.com/patrickhoefler/gocovergate@latest
 ```
 
 ## Usage
 
-```shell
+```text
 go test ./... --coverprofile cover.out
 gocovergate
 ```
