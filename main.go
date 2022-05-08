@@ -26,9 +26,13 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(totalCoverage)
-
 	if totalCoverage < 80 {
+		fmt.Printf(
+			"❌ Code coverage is %.1f%%, but needs to be 80%% or more to pass",
+			totalCoverage,
+		)
 		os.Exit(1)
+	} else {
+		fmt.Printf("✅ Code coverage is %.1f%%", totalCoverage)
 	}
 }
